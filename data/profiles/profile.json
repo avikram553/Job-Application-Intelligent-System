@@ -1,0 +1,179 @@
+{
+  "personal": {
+    "name": "Aditya Vikram",
+    "email": "vkrm.aditya553@gmail.com",
+    "phone": "+49 015510469686",
+    "location": "Chemnitz, Germany",
+    "linkedin": "linkedin.com/in/avikram553",
+    "github": "",
+    "title": "Senior Software Engineer",
+    "summary": "Dynamic Senior Software Engineer with over 3.5 years of experience in developing innovative software solutions. Proficient in machine learning, predictive maintenance, and embedded systems, excelling at enhancing operational efficiency and safety in automotive technologies."
+  },
+  
+  "experience": [
+    {
+      "id": "bosch",
+      "company": "Bosch Global Software Technologies",
+      "role": "Senior Software Engineer",
+      "location": "Bangalore, India",
+      "duration": "March 2022 - September 2025",
+      "start_date": "2022-03",
+      "end_date": "2025-09",
+      "highlights": [
+        "Developed machine-learning model to predict Diagnostic Module Tank Leakage (DMTL) pump replacement times, enhancing maintenance strategies",
+        "Created Visual Studio Code extension integrated with Copilot to provide real-time MISRA-compliant suggestions, ensuring adherence to coding standards",
+        "Developed and optimized Python-based backend APIs using FastAPI and Flask, contributing to cloud deployments on AWS and Azure for scalable environmental footprint calculation tools",
+        "Collaborated in cross-functional team to design and implement web applications and value engineering tools, supporting Bosch sustainability goals through innovative software solutions",
+        "Implemented cybersecurity and security access with AES-128 algorithm",
+        "Applied deep understanding of automotive sensors and actuators (ADC, DIO, PWM, SENT) to optimize embedded systems for real-time applications",
+        "Worked with TensorFlow, PyTorch, Keras, and Scikit-Learn for machine learning implementations"
+      ],
+      "technologies": ["Python", "TensorFlow", "PyTorch", "Keras", "Scikit-Learn", "FastAPI", "Flask", "AWS", "Azure", "Machine Learning", "Embedded Systems"],
+      "latex_variants": {
+        "ml_focused": "Developed predictive maintenance ML models using TensorFlow and PyTorch, achieving enhanced operational efficiency. Created AI-integrated VS Code extensions and deployed scalable cloud solutions on AWS/Azure.",
+        "automotive_focused": "Applied deep understanding of automotive sensors (ADC, DIO, PWM, SENT) to optimize embedded systems. Implemented AES-128 security protocols and developed MISRA-compliant code tools for automotive safety standards.",
+        "backend_focused": "Developed and optimized Python-based backend APIs using FastAPI and Flask. Contributed to cloud deployments on AWS and Azure for scalable environmental footprint calculation tools.",
+        "leadership_focused": "Collaborated in cross-functional teams to design web applications supporting Bosch sustainability goals. Consistently recognized as Star Performer for exceeding performance metrics across 12 consecutive quarters."
+      }
+    }
+  ],
+  
+  "skills": {
+    "programming_languages": ["Python"],
+    "ml_frameworks": ["TensorFlow", "PyTorch", "Keras", "Scikit-Learn"],
+    "ai_frameworks": ["LangChain", "Generative AI", "LLMs", "Prompt Engineering"],
+    "backend_frameworks": ["FastAPI", "Flask", "Django", "RESTful APIs"],
+    "data_science": ["Numpy", "Pandas", "Matplotlib", "Machine Learning", "Deep Learning"],
+    "cloud_platforms": ["Microsoft Azure", "Azure AI Foundry", "AWS"],
+    "automotive": ["Embedded Systems", "ADC", "DIO", "PWM", "SENT", "MISRA Standards"],
+    "security": ["AES-128", "Cybersecurity"],
+    "other": ["Software Testing", "SDLC"],
+    "languages_spoken": ["English (Full Professional Proficiency)", "German (Elementary Proficiency)", "Hindi (Full Professional Proficiency)"]
+  },
+  
+  "projects": [
+    {
+      "id": "algorithm-visualizer",
+      "title": "Algorithm Visualizer",
+      "description": "Designed a visual tool demonstrating various algorithm performance with adjustable parameters using Python and Flask.",
+      "technologies": ["Python", "Flask"],
+      "highlights": [
+        "Interactive visualization of algorithm performance",
+        "Adjustable parameters for real-time comparison",
+        "Web-based interface for accessibility"
+      ],
+      "category": "Web Development"
+    },
+    {
+      "id": "image-steganography",
+      "title": "Image Steganography",
+      "description": "Developed secure confidential data transmission by embedding encrypted information within images, combining signal processing and security.",
+      "technologies": ["Python", "Signal Processing", "Cryptography"],
+      "highlights": [
+        "Secure data embedding in images",
+        "Encryption implementation",
+        "Signal processing techniques"
+      ],
+      "category": "Security"
+    }
+  ],
+  
+  "education": [
+    {
+      "id": "tu-chemnitz",
+      "degree": "Master's in Web Engineering",
+      "institution": "Technische Universität Chemnitz",
+      "location": "Chemnitz, Germany",
+      "duration": "October 2025 - Present",
+      "start_date": "2025-10",
+      "end_date": "Present",
+      "status": "In Progress",
+      "courses": [
+        "Advance Management of Data",
+        "XML and Web Technologies",
+        "Machine Learning"
+      ]
+    },
+    {
+      "id": "nsec",
+      "degree": "BTech Electronics and Communication",
+      "institution": "Netaji Subhash Engineering College",
+      "location": "Kolkata, India",
+      "duration": "June 2017 - June 2021",
+      "start_date": "2017-06",
+      "end_date": "2021-06",
+      "status": "Completed",
+      "courses": [
+        "Neural Networks",
+        "Networks and Ethical Hacking",
+        "Data Structures and Algorithms",
+        "Object Oriented Programming"
+      ]
+    }
+  ],
+  
+  "achievements": [
+    {
+      "id": "star-performer",
+      "title": "Sustained Top Performance (Star Performer)",
+      "organization": "Bosch Global Software Technologies",
+      "date": "March 2023 - September 2025",
+      "description": "Recognized as the 'Star Performer' for every single quarter from Q4 2022 through 2025, consistently exceeding performance metrics and quality standards.",
+      "duration": "12 consecutive quarters",
+      "significance": "Top performance recognition across all evaluation periods"
+    },
+    {
+      "id": "recommendations",
+      "title": "Letter of Recommendations",
+      "description": "Received recommendations from Lead Engineers from Bosch and Head of Department (HOD) of NSEC",
+      "significance": "Recognition from senior leadership"
+    },
+    {
+      "id": "codechef",
+      "title": "CodeChef 4-Star Rating",
+      "platform": "CodeChef",
+      "achievement": "Achieved an overall rating of 4 star",
+      "category": "Competitive Programming"
+    }
+  ],
+  
+  "certifications": [
+    {
+      "id": "ml-regression",
+      "name": "Supervised Machine Learning: Regression and Classification",
+      "issuer": "Coursera/Stanford",
+      "date": "",
+      "category": "Machine Learning"
+    },
+    {
+      "id": "gen-ai",
+      "name": "Generative AI Mastermind",
+      "issuer": "",
+      "date": "",
+      "category": "Artificial Intelligence"
+    },
+    {
+      "id": "ethical-hacking",
+      "name": "Networks and Ethical Hacking",
+      "issuer": "",
+      "date": "",
+      "category": "Cybersecurity"
+    }
+  ],
+  
+  "metadata": {
+    "created_at": "2025-01-03T12:00:00Z",
+    "last_updated": "2025-01-03T12:00:00Z",
+    "version": "1.0.0",
+    "source": "Extracted from resume PDF",
+    "profile_completeness": "95%",
+    "years_of_experience": "3.5",
+    "current_status": "Master's Student & Job Seeker",
+    "target_roles": [
+      "Machine Learning Engineer",
+      "Software Engineer - AI/ML",
+      "Backend Engineer",
+      "Research Engineer"
+    ]
+  }
+}

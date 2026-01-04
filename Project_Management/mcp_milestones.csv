@@ -1,0 +1,5 @@
+Milestone ID,Milestone Name,Target Date,Phase Dependencies,Deliverable,Demo Requirements,Status,Completion %
+M1,Core MCP Understanding,,Phase 1 + Phase 2,Working MCP server with profile and application tracking,"Create profile, track application, persist data",Not Started,0
+M2,Full Workflow MVP,,Phase 1-5,End-to-end application creation from job posting,"Research company → analyze job → generate LaTeX → track application",Not Started,0
+M3,Production System,,Phase 1-8,"Secure, reliable, monitored system","Deploy to production, demonstrate error handling and recovery",Not Started,0
+M4,Complete Platform,,Phase 1-10,AI-powered extensible job application platform,Full autonomous workflow with intelligent recommendations,Not Started,0

@@ -1,0 +1,16 @@
+Decision ID,Date,Phase,Decision Category,Decision Made,Rationale,Impact,Alternatives Considered,Status
+D1,,Phase 1,Tech Stack,Use Python for implementation,Matches ML background and easier LaTeX manipulation,Medium,TypeScript (MCP native),Pending
+D2,,Phase 1,Storage,JSON for profile data,Simple and version-controllable,Low,SQLite for everything,Pending
+D3,,Phase 2,Storage,SQLite for application tracking,Better for querying and relationships,Medium,JSON files,Pending
+D4,,Phase 2,ID Format,UUID for application IDs,Globally unique and collision-free,Low,Human-readable slugs,Pending
+D5,,Phase 3,Data Sources,Web scraping + APIs hybrid,Comprehensive coverage,High,APIs only,Pending
+D6,,Phase 3,Cache Strategy,Time-based invalidation (24h for company data),Balance freshness and API costs,Medium,Manual invalidation,Pending
+D7,,Phase 4,Template Engine,Jinja2 for LaTeX generation,Powerful and Python-native,High,String formatting only,Pending
+D8,,Phase 4,Template Variants,Multiple templates per role type,Better customization,Medium,Single universal template,Pending
+D9,,Phase 5,Automation Level,Semi-automated with user confirmations,Safety and control,High,Fully automated,Pending
+D10,,Phase 6,Success Metric,Interview invitations as primary metric,Clear and measurable,High,Application count,Pending
+D11,,Phase 7,Authentication,API key based authentication,Simple and secure enough,Medium,OAuth 2.0,Pending
+D12,,Phase 7,Encryption,AES-256 for sensitive data,Industry standard,High,No encryption,Pending
+D13,,Phase 8,Deployment,Docker containerization,Portability and consistency,High,Direct installation,Pending
+D14,,Phase 9,Email Provider,Gmail API integration,Most common and well-documented,Medium,SendGrid API,Pending
+D15,,Phase 10,LLM Choice,OpenAI GPT-4 for initial implementation,Best quality currently,High,Local Llama model,Pending
