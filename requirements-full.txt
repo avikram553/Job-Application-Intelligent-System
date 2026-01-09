@@ -1,0 +1,33 @@
+# MCP Job Application Intelligence System
+# Complete Requirements File
+
+# Core MCP Framework
+fastmcp>=0.1.0
+pydantic>=2.0.0
+
+# Job Scraping
+apify-client>=1.7.0
+
+# HTTP Client for API calls
+httpx>=0.27.0
+
+# Template Engine for LaTeX generation
+jinja2>=3.1.0
+
+# Database (SQLite is built-in to Python)
+# No additional requirements needed
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Optional: CLI enhancements
+click>=8.0.0
+
+# Optional: PDF generation (if compiling LaTeX to PDF)
+# PyPDF2>=3.0.0  # Uncomment if needed
+
+# Development Dependencies (optional)
+# pytest>=8.0.0
+# pytest-asyncio>=0.23.0
+# black>=24.0.0
+# mypy>=1.8.0
