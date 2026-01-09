@@ -1,0 +1,181 @@
+% ATS-Friendly Resume Template
+% Compatible with Overleaf and standard LaTeX distributions
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.8cm]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\setlist{nosep, leftmargin=*}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue
+}
+
+\begin{document}
+
+% ============================================================================
+% PERSONAL INFORMATION
+% ============================================================================
+\begin{center}
+{\LARGE \textbf{ {{- personal.name -}} }}\\[0.3cm]
+{{- personal.email }} | {{ personal.phone }} | {{ personal.location }}\\
+{% if personal.linkedin -%}
+\href{ {{- personal.linkedin -}} }{LinkedIn}
+{%- endif -%}
+{% if personal.github and personal.github != "" %} | \href{ {{- personal.github -}} }{GitHub}{% endif %}
+\end{center}
+
+\vspace{0.3cm}
+
+% ============================================================================
+% PROFESSIONAL SUMMARY (Optional)
+% ============================================================================
+{% if personal.summary %}
+\section*{Summary}
+{{ personal.summary }}
+
+\vspace{0.2cm}
+{% endif %}
+
+% ============================================================================
+% SKILLS
+% ============================================================================
+\section*{Skills}
+
+{% if skills.programming_languages %}
+\textbf{Programming Languages:} {{ skills.programming_languages | join(', ') }}\\
+{% endif %}
+
+{% if skills.ml_frameworks %}
+\textbf{ML/AI Frameworks:} {{ skills.ml_frameworks | join(', ') }}
+{%- if skills.ai_frameworks %}, {{ skills.ai_frameworks | join(', ') }}{% endif %}\\
+{% endif %}
+
+{% if skills.backend_frameworks %}
+\textbf{Backend Frameworks:} {{ skills.backend_frameworks | join(', ') }}\\
+{% endif %}
+
+{% if skills.cloud_platforms %}
+\textbf{Cloud Platforms:} {{ skills.cloud_platforms | join(', ') }}\\
+{% endif %}
+
+{% if skills.data_science %}
+\textbf{Data Science:} {{ skills.data_science | join(', ') }}\\
+{% endif %}
+
+{% if skills.automotive %}
+\textbf{Automotive/Embedded:} {{ skills.automotive | join(', ') }}\\
+{% endif %}
+
+{% if skills.other %}
+\textbf{Other:} {{ skills.other | join(', ') }}\\
+{% endif %}
+
+\vspace{0.2cm}
+
+% ============================================================================
+% EXPERIENCE
+% ============================================================================
+\section*{Professional Experience}
+
+{% for exp in experience %}
+\textbf{ {{- exp.role -}} } | {{ exp.company }} \hfill {{ exp.duration }}
+{% if exp.location %}\\
+\textit{ {{- exp.location -}} }
+{% endif %}
+
+\begin{itemize}[leftmargin=0.5cm]
+{% for highlight in exp.highlights %}
+\item {{ highlight }}
+{% endfor %}
+\end{itemize}
+
+{% if not loop.last %}
+\vspace{0.2cm}
+{% endif %}
+{% endfor %}
+
+\vspace{0.2cm}
+
+% ============================================================================
+% EDUCATION
+% ============================================================================
+\section*{Education}
+
+{% for edu in education %}
+\textbf{ {{- edu.degree -}} } | {{ edu.institution }} \hfill {{ edu.duration }}
+{% if edu.location %}\\
+\textit{ {{- edu.location -}} }
+{% endif %}
+{% if edu.courses %}\\
+\textit{Relevant Coursework:} {{ edu.courses | join(', ') }}
+{% endif %}
+
+{% if not loop.last %}
+\vspace{0.2cm}
+{% endif %}
+{% endfor %}
+
+\vspace{0.2cm}
+
+% ============================================================================
+% PROJECTS (Optional)
+% ============================================================================
+{% if projects and projects | length > 0 %}
+\section*{Projects}
+
+{% for project in projects %}
+\textbf{ {{- project.title -}} }
+{% if project.url %} | \href{ {{- project.url -}} }{Link}{% endif %}\\
+{{ project.description }}
+{% if project.technologies %}\\
+\textit{Technologies:} {{ project.technologies | join(', ') }}
+{% endif %}
+
+{% if not loop.last %}
+\vspace{0.2cm}
+{% endif %}
+{% endfor %}
+
+\vspace{0.2cm}
+{% endif %}
+
+% ============================================================================
+% CERTIFICATIONS (Optional)
+% ============================================================================
+{% if certifications and certifications | length > 0 %}
+\section*{Certifications}
+
+\begin{itemize}[leftmargin=0.5cm]
+{% for cert in certifications %}
+\item \textbf{ {{- cert.name -}} } - {{ cert.issuer }}{% if cert.date %} ({{ cert.date }}){% endif %}
+{% endfor %}
+\end{itemize}
+
+\vspace{0.2cm}
+{% endif %}
+
+% ============================================================================
+% ACHIEVEMENTS (Optional)
+% ============================================================================
+{% if achievements and achievements | length > 0 %}
+\section*{Achievements \& Awards}
+
+\begin{itemize}[leftmargin=0.5cm]
+{% for achievement in achievements %}
+\item \textbf{ {{- achievement.title -}} }{% if achievement.organization %} - {{ achievement.organization }}{% endif %}
+{% if achievement.description %}\\
+{{ achievement.description }}
+{% endif %}
+{% endfor %}
+\end{itemize}
+{% endif %}
+
+\end{document}
