@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "profile_server": {
+      "command": "python",
+      "args": ["/Users/adityavikram/Desktop/Must_Do_Projects_2026/Job Application Intelligence System/src/models/profile_server.py"],
+      "description": "Manages user profile data for job applications"
+    },
+    "job_scraper": {
+      "command": "python",
+      "args": ["/Users/adityavikram/Desktop/Must_Do_Projects_2026/Job Application Intelligence System/src/scraper/job_scraper_server.py"],
+      "description": "Scrapes job postings from LinkedIn and Indeed"
+    },
+    "analysis_server": {
+      "command": "python",
+      "args": ["/Users/adityavikram/Desktop/Must_Do_Projects_2026/Job Application Intelligence System/src/analysis/analysis_server.py"],
+      "description": "Analyzes job descriptions using AI"
+    },
+    "matcher_server": {
+      "command": "python",
+      "args": ["/Users/adityavikram/Desktop/Must_Do_Projects_2026/Job Application Intelligence System/src/matcher/matcher_server.py"],
+      "description": "Matches profile to job requirements"
+    },
+    "document_generator": {
+      "command": "python",
+      "args": ["/Users/adityavikram/Desktop/Must_Do_Projects_2026/Job Application Intelligence System/src/generator/document_generator_server.py"],
+      "description": "Generates personalized LaTeX resumes"
+    },
+    "tracker_server": {
+      "command": "python",
+      "args": ["/Users/adityavikram/Desktop/Must_Do_Projects_2026/Job Application Intelligence System/src/tracker/tracker_server.py"],
+      "description": "Tracks application status and statistics"
+    }
+  }
+}
